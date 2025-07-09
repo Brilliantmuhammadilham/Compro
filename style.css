@@ -1,0 +1,370 @@
+/* Font dan Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar */
+header.navbar {
+    background: #007bff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+}
+
+nav.navigation a {
+    margin-left: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+nav.navigation a:hover {
+    color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+    background: url('tower3.jpg') center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 80px;
+    color: #ffffff;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 123, 255, 0.5);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Sections */
+.section {
+    padding: 4rem 0;
+}
+
+/* About */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.about-text {
+    flex: 1;
+    text-align: justify;
+}
+
+/* Section Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #007bff;
+}
+
+/* Vision & Mission */
+.gray-section {
+    background: #eaf4ff;
+}
+
+.vision-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: justify;
+}
+
+.vision-content h3 {
+    margin-top: 1rem;
+    color: #007bff;
+}
+
+.vision-content ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 1rem;
+}
+
+.vision-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Services */
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.2);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid #007bff20;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact */
+.contact-section {
+    background: #eaf4ff;
+    color: #1a1a1a;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+/* Footer */
+footer {
+    background: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+    }
+
+    nav.navigation a {
+        margin: 0.5rem;
+    }
+
+    .hero {
+        height: auto;
+        padding: 4rem 2rem;
+    }
+
+    .service-cards {
+        flex-direction: column;
+    }
+}
+
+.clients-section {
+    background-color: #f0f8ff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #007bff;
+}
+
+.clients-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clients-grid a img {
+    max-height: 60px;
+    filter: grayscale(100%);
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.clients-grid a:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.client-detail {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.client-detail .container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.client-detail .client-logo {
+    max-width: 180px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+}
+
+.client-detail .client-logo:hover {
+    transform: scale(1.05);
+}
+
+.client-detail .client-banner {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.client-detail h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.client-detail p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+    white-space: pre-line;
+}
+
+.client-detail ul {
+    text-align: left;
+    max-width: 800px;
+    margin: 1rem auto;
+    padding-left: 1.2rem;
+    list-style-type: disc;
+    color: #333;
+}
+
+.client-detail li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+    white-space: pre-line;
+}
+
+/* Optional: Membuat teks di dalam client-detail lebih rapi jika isi <p> terlalu panjang atau campur dengan <li> */
+.client-detail .container>p,
+.client-detail .container>ul {
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .client-detail h4 {
+        font-size: 24px;
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+        text-align: justify;
+        max-width: 800px;
+        margin: auto;
+        text-align: justify;
+        white-space: pre-line;
+    }
+
+    .client-detail p {
+        font-size: 15px;
+    }
+
+    .client-detail .client-logo {
+        max-width: 140px;
+    }
+}
+
+.text-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.text-group h4 {
+  min-width: 200px;
+  margin: 0;
+}
+
+.text-group p {
+  flex: 1;
+  margin: 0;
+}
